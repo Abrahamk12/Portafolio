@@ -4,119 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ING Uriel Abraham</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/js/main.js">
+  <script src="/assets/js/idioma.js" defer></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
 <body>
-  <main id="inicio">
-    <h1>Bienvenido a mi portafolio</h1>
-    <p>Hola, soy Uriel Abraham Lopez Fleischer, un ingeniero apasionado por la tecnología y el desarrollo de software. Aquí encontrarás información sobre mis proyectos, habilidades y cómo contactarme.</p>
-  </main>
-  <aside id="sidebar">
-    <div>
-      <img src="/assets/img/profile-img.jpg" alt="" width="10%" height="10%">
-      <h1>ING Uriel Abraham lopez fleischer</h1>
-      <li><a href="https://www.linkedin.com/in/uriel-abraham-lopez-fleischer-1b0960223/">linkedin</a></li>
-      <li><a href="https://github.com/Abrahamk12">github</a></li>
-    </div>
-    <nav >
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobremi">Sobre mi</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contact</a></li>
-      </ul>
-    </nav>
-  </aside>
+  <header class="menu">
+    <nav>
+      <div class="menu-left">
+        <ul>
+          <li><a href="#menu" data-key="menu"></a></li>
+          <li><a href="#sobre-mi" data-key="about"></a></li>
+          <li><a href="#experiencia" data-key="experience"></a></li>
+        </ul>
+      </div>
 
-  <section id="sobremi">
-    <div>
-      <h1>Sobre mi</h1>
-      <p>Titulado de la Universidad de Sonora, de la carrera de Ingeniería en Sistemas de Información, 
-        busco oportunidades para adquirir experiencia en el area del desarrollo Web y aplicaciones de computadoras. 
-        Estoy interesado en tecnologías emergentes y aprendizaje continuo.</p>
+      <img src="assets/img/profile-img.jpg" alt="Uriel Abraham" class="profile-img" id="toggle-menu">
+
+      <div class="menu-right">
+        <ul>
+          <li><a href="#" data-key="projects"></a></li>
+          <li><a href="#" data-key="resume"></a></li>
+          <li><a href="#" data-key="contact"></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="idioma-switch">
+      <button data-lang="es">ES</button>
+      <button data-lang="en">EN</button>
     </div>
-    <div>
-      <h2>Habilidades</h2>
-      <p>Resolución de problemas, Comunicación, Adaptabilidad, Trabajo en equipo, Creatividad, Ética de trabajo.</p>
+    <div class="menu-movil" id="menu-movil">
+      <ul>
+        <li><a href="#menu" data-key="menu"></a></li>
+        <li><a href="#sobre-mi" data-key="about"></a></li>
+        <li><a href="#experiencia" data-key="experience"></a></li>
+        <li><a href="#" data-key="projects"></a></li>
+        <li><a href="#" data-key="resume"></a></li>
+        <li><a href="#" data-key="contact"></a></li>
+      </ul>
     </div>
-    <div>
-      <h2>Lenguajes de programacion</h2>
-    </div>
+
   </section>
-  <section id="resumen">
-    <h1>Resumen</h1>
-     <div class="col-lg-6" data-aos="fade-up">
-       <div class="row">
+
+  <section class="sobre-mi" id="sobre-mi">
+    <h1 data-key="about"></h1>
+    <p data-key="about-text"> </p>
+    <h2 data-key="skills"></h2>
+    <p data-key="skills-text"></p>
+  </section>
+
+  <section class="experiencia skills section-bg skills section-bg" id="skills">
+    <div class="lenguajes-programacion container" id="lenguajes-programacion">
+      <div class="row skills-content">
+        <h2 data-key="len-p"></h2>
           <div class="col-lg-6" data-aos="fade-up">
-            <div class="resume-item pb-0">
-              <h4>Uriel Abraham Lopez Fleischer</h4>
-              <p><em>Egresado de la Universidad de Sonora, de la carrera de Ingeniería en Sistemas de Información, busco
-                     oportunidades para adquirir experiencia en el área del desarrollo Web y aplicaciones de computadoras.
-                     Estoy interesado en tecnologías emergentes y aprendizaje continuo.</em></p>
-              <ul>
-                <li>+52 66 2429 7801</li>
-                <li>uriel.abraham.fleischer@hotmail.com</li>
-              </ul>
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
-            <h3 class="resume-title">Educacion</h3>
-            <div class="resume-item">
-              <h4>INGENIERIA EN SISTEMAS DE INFORMACION</h4>
-              <h5>2019 - 2023</h5>
-              <p><em>Universidad de Sonora</em></p>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">25%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Java <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
             </div>
             
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Experiencia Laboral</h3>
-            <div class="resume-item">
-              <h4>Maestro en Ingenierias</h4>
-              <h5>2024 – 2025</h5>
-              <p><em>UNIVERSIDAD KINO</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Soporte tecnico</h4>
-              <h5>20/01/2023 – 28/11/2023</h5>
-              <p><em>Centro de servicios de tecnología de la información (CSTI) </em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Servicio Social en el area de psicologia</h4>
-              <h5>26/09/2022 – 26/05/2023</h5>
-              <p><em>Universidad de Sonora</em> </p>
-              <ul>
-                <li>Desarrollar software y tareas experimentales específicas a las necesidades de los proyectos de investigación.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <a href="https://1drv.ms/b/s!Aqg0PfSOGMWBibsagR6XCVmb08UbXA?e=jALl1Q"><h4>Concurso de emprendedores 2022 innovat</h4></a>
-              <h5>24/11/2022 – 24/11/2022</h5>
-              <p><em>Universidad de Sonora</em></p>
-              <ul>
-                <li>Por su participación con el proyecto “MIMIKO” en el Certamen Emprendedor BúhoInnova-T 2022 en la categoría de Proyecto de Negocios.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Soporte tecnico</h4>
-              <h5>01/01/2016 – Actual</h5>
-              <p><em>Mantenimiento e instalación de programas en equipos de cómputo de manera independiente</em></p>
-            </div>
-          </div>
-        </div>
 
-      </div>
-  </section>
-  <section id="proyectos">
-  </section>
-  <section id="servicios">
-  </section>
-  <footer id="contacto">
-    <h1>Contacto</h1>
-    <div id="infContacto">
-      <h2 for="#correo">Correo</h2>
-      <h3 id="correo">uriel.abraham.fleischer@hotmail.com</h3>
-      <h2 for="#celular">Celular</h2>
-      <h3 id="celular">+52 66 2429 7801</h3>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="progress">
+              <span class="skill">SQL <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MySQL <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">PostgreSQL <i class="val">25%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Linux <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C# <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
     </div>
+  </section>
+
+  <footer>
+    
   </footer>
 </body>
+<script src="/assets/js/principal.js" defer></script>
 </html>

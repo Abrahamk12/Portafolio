@@ -1,0 +1,26 @@
+{
+  "es": {
+    "menu": "Menú",
+    "about": "¿Quién soy?",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "resume": "Resumen",
+    "contact": "Contacto",
+    "about-text": "Titulado de la Universidad de Sonora, de la carrera de Ingeniería en Sistemas de Información, busco oportunidades para adquirir experiencia en el area del desarrollo Web y aplicaciones de computadoras. Estoy interesado en tecnologías emergentes y aprendizaje continuo.",
+    "skills": "Habilidades",
+    "skills-text":"Resolución de problemas, Comunicación, Adaptabilidad, Trabajo en equipo, Creatividad, Ética de trabajo.",
+    "len-p":"Lenguajes de Programacion"
+  },
+  "en": {
+    "menu": "Menu",
+    "about": "About Me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "resume": "Résumé",
+    "contact": "Contact",
+    "about-text": "A graduate of the University of Sonora with a degree in Information Systems Engineering, I am seeking opportunities to gain experience in web development and computer applications. I am interested in emerging technologies and continuous learning.",
+    "skills":"Skills",
+    "skills-text":"Problem solving, Communication, Adaptability, Teamwork, Creativity, Work ethic.",
+    "len-p":"Programming Languages"
+  }
+}
